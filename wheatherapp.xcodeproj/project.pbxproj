@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C90DA8823EEF64400CFE83F /* APIStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C90DA8723EEF64400CFE83F /* APIStruct.swift */; };
+		2C90DA8A23EEF77800CFE83F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C90DA8923EEF77800CFE83F /* API.swift */; };
 		2CC3A2D023EB14F000BF76EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3A2CF23EB14F000BF76EE /* AppDelegate.swift */; };
 		2CC3A2D223EB14F000BF76EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3A2D123EB14F000BF76EE /* SceneDelegate.swift */; };
 		2CC3A2D423EB14F000BF76EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3A2D323EB14F000BF76EE /* ViewController.swift */; };
 		2CC3A2D723EB14F000BF76EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3A2D523EB14F000BF76EE /* Main.storyboard */; };
 		2CC3A2D923EB14F400BF76EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3A2D823EB14F400BF76EE /* Assets.xcassets */; };
 		2CC3A2DC23EB14F400BF76EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3A2DA23EB14F400BF76EE /* LaunchScreen.storyboard */; };
+		2CC3A2ED23ECA46900BF76EE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3A2EB23ECA46900BF76EE /* CustomTableViewCell.swift */; };
+		2CC3A2EE23ECA46900BF76EE /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3A2EC23ECA46900BF76EE /* CustomTableViewCell.xib */; };
+		2CD2A61023FBCE2600D067E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A60F23FBCE2600D067E3 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C90DA8723EEF64400CFE83F /* APIStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStruct.swift; sourceTree = "<group>"; };
+		2C90DA8923EEF77800CFE83F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		2CC3A2CC23EB14F000BF76EE /* wheatherapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wheatherapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC3A2CF23EB14F000BF76EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC3A2D123EB14F000BF76EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		2CC3A2D823EB14F400BF76EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC3A2DB23EB14F400BF76EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CC3A2DD23EB14F400BF76EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC3A2EB23ECA46900BF76EE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		2CC3A2EC23ECA46900BF76EE /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		2CD2A60F23FBCE2600D067E3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C90DA8623EEEC8F00CFE83F /* CustumCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CC3A2EB23ECA46900BF76EE /* CustomTableViewCell.swift */,
+				2CC3A2EC23ECA46900BF76EE /* CustomTableViewCell.xib */,
+			);
+			path = CustumCell;
+			sourceTree = "<group>";
+		};
 		2CC3A2C323EB14F000BF76EE = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +75,14 @@
 		2CC3A2CE23EB14F000BF76EE /* wheatherapp */ = {
 			isa = PBXGroup;
 			children = (
+				2C90DA8623EEEC8F00CFE83F /* CustumCell */,
 				2CC3A2CF23EB14F000BF76EE /* AppDelegate.swift */,
 				2CC3A2D123EB14F000BF76EE /* SceneDelegate.swift */,
 				2CC3A2D323EB14F000BF76EE /* ViewController.swift */,
+				2C90DA8723EEF64400CFE83F /* APIStruct.swift */,
+				2C90DA8923EEF77800CFE83F /* API.swift */,
 				2CC3A2D523EB14F000BF76EE /* Main.storyboard */,
+				2CD2A60F23FBCE2600D067E3 /* DetailViewController.swift */,
 				2CC3A2D823EB14F400BF76EE /* Assets.xcassets */,
 				2CC3A2DA23EB14F400BF76EE /* LaunchScreen.storyboard */,
 				2CC3A2DD23EB14F400BF76EE /* Info.plist */,
@@ -127,6 +150,7 @@
 			files = (
 				2CC3A2DC23EB14F400BF76EE /* LaunchScreen.storyboard in Resources */,
 				2CC3A2D923EB14F400BF76EE /* Assets.xcassets in Resources */,
+				2CC3A2EE23ECA46900BF76EE /* CustomTableViewCell.xib in Resources */,
 				2CC3A2D723EB14F000BF76EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C90DA8823EEF64400CFE83F /* APIStruct.swift in Sources */,
 				2CC3A2D423EB14F000BF76EE /* ViewController.swift in Sources */,
 				2CC3A2D023EB14F000BF76EE /* AppDelegate.swift in Sources */,
+				2CC3A2ED23ECA46900BF76EE /* CustomTableViewCell.swift in Sources */,
+				2C90DA8A23EEF77800CFE83F /* API.swift in Sources */,
 				2CC3A2D223EB14F000BF76EE /* SceneDelegate.swift in Sources */,
+				2CD2A61023FBCE2600D067E3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Marcus-Nilsson.wheatherapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Marcus-Nilsson.wheatherapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
