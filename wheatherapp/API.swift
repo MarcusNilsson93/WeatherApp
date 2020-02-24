@@ -12,7 +12,7 @@ struct weatherAPI {
     let baseUrl: String = "https://api.openweathermap.org/data/2.5/weather?q="
     var city = ""
     var countryCode = ",swe"
-    var celciusMode = "&mode=json&units=metric"
+    var celciusMode = "&mode=json&units=metric&lang=se"
     var myApiKey = "&appid=474162a4983426301b2af56e1ee15fca"
     
     
