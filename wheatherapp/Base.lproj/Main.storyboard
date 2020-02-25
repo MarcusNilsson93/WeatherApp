@@ -101,9 +101,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4K-X9-rex">
-                                <rect key="frame" x="20" y="558" width="374" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4K-X9-rex">
+                                <rect key="frame" x="20" y="568" width="374" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Få rekomendation på lämpliga kläder">
@@ -113,9 +112,11 @@
                                     <action selector="buttonClick:" destination="IWe-r6-sIY" eventType="touchUpInside" id="y5R-bn-GPI"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pVt-lA-sac">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pVt-lA-sac">
                                 <rect key="frame" x="87" y="633" width="240" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pVt-lA-sac" secondAttribute="height" multiplier="80:33" id="GtT-FH-SyQ"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -125,6 +126,7 @@
                         <constraints>
                             <constraint firstItem="98n-5i-dTZ" firstAttribute="top" secondItem="HBe-Nb-zdc" secondAttribute="bottom" constant="30.5" id="4nn-pW-PTw"/>
                             <constraint firstItem="v84-25-kfa" firstAttribute="trailing" secondItem="98n-5i-dTZ" secondAttribute="trailing" constant="107" id="6cj-vV-FEX"/>
+                            <constraint firstItem="v84-25-kfa" firstAttribute="trailing" secondItem="k4K-X9-rex" secondAttribute="trailing" constant="20" id="BkM-g1-dgf"/>
                             <constraint firstItem="9lt-o3-unc" firstAttribute="top" secondItem="GyX-Rx-vxu" secondAttribute="bottom" constant="8" id="Etm-Ip-26J"/>
                             <constraint firstItem="GyX-Rx-vxu" firstAttribute="leading" secondItem="v84-25-kfa" secondAttribute="leading" constant="20" id="GJ0-1F-O3h"/>
                             <constraint firstItem="v84-25-kfa" firstAttribute="trailing" secondItem="GyX-Rx-vxu" secondAttribute="trailing" constant="20" id="KpZ-cg-agQ"/>
@@ -133,14 +135,19 @@
                             <constraint firstItem="v84-25-kfa" firstAttribute="trailing" secondItem="9lt-o3-unc" secondAttribute="trailing" constant="20" id="LyR-3Q-qlp"/>
                             <constraint firstItem="Oin-g3-ccd" firstAttribute="top" secondItem="9lt-o3-unc" secondAttribute="bottom" constant="8" id="MvB-Pw-Qr4"/>
                             <constraint firstItem="v84-25-kfa" firstAttribute="trailing" secondItem="Oin-g3-ccd" secondAttribute="trailing" constant="20" id="Nbw-Df-2YT"/>
+                            <constraint firstItem="v84-25-kfa" firstAttribute="bottom" secondItem="pVt-lA-sac" secondAttribute="bottom" constant="130" id="Omh-gJ-cne"/>
                             <constraint firstItem="GyX-Rx-vxu" firstAttribute="top" secondItem="98n-5i-dTZ" secondAttribute="bottom" constant="73" id="RFI-6R-Mez"/>
+                            <constraint firstItem="v84-25-kfa" firstAttribute="trailing" secondItem="pVt-lA-sac" secondAttribute="trailing" constant="87" id="Sih-XN-7WI"/>
+                            <constraint firstItem="k4K-X9-rex" firstAttribute="leading" secondItem="v84-25-kfa" secondAttribute="leading" constant="20" id="WvT-6x-Msh"/>
                             <constraint firstItem="Oin-g3-ccd" firstAttribute="leading" secondItem="v84-25-kfa" secondAttribute="leading" constant="20" id="X2n-rh-tP9"/>
                             <constraint firstItem="v84-25-kfa" firstAttribute="trailing" secondItem="HBe-Nb-zdc" secondAttribute="trailing" constant="20" id="Zdu-QZ-7C1"/>
                             <constraint firstItem="HBe-Nb-zdc" firstAttribute="leading" secondItem="v84-25-kfa" secondAttribute="leading" constant="20" id="eZt-5B-Oe8"/>
                             <constraint firstItem="Oin-g3-ccd" firstAttribute="top" secondItem="9lt-o3-unc" secondAttribute="bottom" constant="8" id="fMq-tB-cC6"/>
                             <constraint firstItem="9lt-o3-unc" firstAttribute="top" secondItem="GyX-Rx-vxu" secondAttribute="bottom" constant="8" id="fyf-JI-0xD"/>
                             <constraint firstItem="HBe-Nb-zdc" firstAttribute="top" secondItem="v84-25-kfa" secondAttribute="top" constant="20" id="oM3-z5-GTe"/>
+                            <constraint firstItem="pVt-lA-sac" firstAttribute="top" secondItem="k4K-X9-rex" secondAttribute="bottom" constant="31" id="okZ-9C-F9P"/>
                             <constraint firstItem="9lt-o3-unc" firstAttribute="leading" secondItem="v84-25-kfa" secondAttribute="leading" constant="20" id="oyl-Pk-Dts"/>
+                            <constraint firstItem="pVt-lA-sac" firstAttribute="leading" secondItem="v84-25-kfa" secondAttribute="leading" constant="87" id="pOF-MS-hXL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v84-25-kfa"/>
                     </view>
